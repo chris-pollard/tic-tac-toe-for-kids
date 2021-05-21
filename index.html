@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - kids version</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <img class="fixed-background" src="images/green_leaves.png" alt="">
+
+    <div class="page-1">
+
+        <div class="page-1-col-1">
+            <div class="col-1-row-1">
+                <img class="page-1-animal-img bounce-top" src="images/cute_lion.png" alt="cute lion">
+            </div>
+            <div class="col-1-row-2">
+
+            </div>
+
+        </div>
+        <div class="page-1-col-2">
+            
+            <h1 class="page-1-heading">Tic Tac Toe</h1>
+            <p class="welcome-instruction">click to play</p>
+            <button class="play-btn">play</button>
+
+        </div>
+        <div class="page-1-col-3">
+            <div class="col-3-row-1">
+                
+            </div>
+            <div class="col-3-row-2">
+                <img class="page-1-animal-img-2 bounce-top" src="images/giraffe.png" alt="cute lion">
+            </div>
+
+        </div>
+
+
+        
+
+    </div>
+
+    <div class="page-2 hidden">
+        <section class="player-1-section">
+
+            <form>
+
+                <fieldset>
+                    <legend>Player 1 Name</legend>
+                    <div>
+                        <input type="text" name="player-1-name" class="player-1-name" placeholder="Type a name...">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Player 1 Avatar</legend>
+                  <div class="radio-input-div">
+                    <label class="radio">
+                        <input type="radio" id="avatar1"
+                         name="player1Avatar" value="avatar1" data-url="images/giraffe_face.png" checked>
+    
+                        <img class="avatar-1-img" alt="Chris" src="images/giraffe_face.png" />
+
+                    </label>
+              
+                    <label class="radio">
+
+                        <input type="radio" id="avatar2"
+                         name="player1Avatar" value="avatar2" data-url="images/elephant_face.png">
+    
+                        <img class="avatar-2-img" alt="Chris" src="images/elephant_face.png"/>
+
+                    </label>
+              
+                    <label class="radio">
+
+                        <input type="radio" id="avatar3"
+                         name="player1Avatar" value="mail" data-url="images/lion_face.png">
+    
+                        <img class="avatar-3-img" alt="Chris" src="images/lion_face.png" />
+
+                    </label>
+                  </div>
+                </fieldset>
+                
+                <div class="form-buttons">
+                    <button class="player-1-submit-btn" type="button">Next</button>
+                    <button type="reset">Reset</button>
+                </div>
+              </form>
+            
+        </section>
+
+
+
+        <section class="player-2-section hidden">
+
+            <form>
+
+                <fieldset>
+                    <legend>Player 2 Name</legend>
+                    <div>
+                        <input type="text" name="player-2-name" class="player-2-name" placeholder="Type a name...">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Player 2 Avatar</legend>
+                  <div>
+
+                    <label class="radio">
+
+                        <input type="radio" id="avatar1"
+                         name="player2Avatar" value="avatar1" data-url="images/toucan.png" checked>
+    
+                        <img class="avatar-1-img" alt="Chris" src="images/toucan.png" />
+
+                    </label>
+
+                    <label class="radio">
+
+                        <input type="radio" id="avatar2"
+                         name="player2Avatar" value="avatar2" data-url="images/tiger_face.png">
+    
+                        <img class="avatar-2-img" alt="Chris" src="images/tiger_face.png" />
+
+                    </label>
+
+                    <label class="radio">
+
+                        <input type="radio" id="avatar3"
+                         name="player2Avatar" value="mail" data-url="images/monkey_face.png">
+    
+                        <img class="avatar-3-img" alt="Chris" src="images/monkey_face.png" />
+
+                    </label>
+              
+                  </div>
+                </fieldset>
+                
+                <div class="form-buttons">
+                    <button class="player-2-submit-btn" type="button">Next</button>
+                    <button type="reset">Reset</button>
+                </div>
+              </form>
+
+
+        </section>
+
+        <div class="review-container hidden">
+
+            <h2 class="review-title">Ready to play?</h2>
+            <div class="player-1-review">
+
+                <h3 class="player-1-title">Player 1: </h3>
+                <img class="player-1-review-avatar" src="" alt="">
+            </div>
+            
+            <h3>versus</h3>
+
+            <div class="player-2-review">
+                <h3 class="player-2-title">Player 2: </h3>
+                <img class="player-2-review-avatar" src="" alt="">
+
+            </div>
+
+            
+
+            <button class="start-btn">Start game</button>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="page-3 hidden">
+
+        <div class="side-container">
+
+            <div class="player-boxes">
+                
+                <div class="player-1-box">
+                    <h3 class="player-1-side"></h3>
+                    <div><img src="" alt=""></div>
+                </div>
+    
+                <div class="player-2-box">
+                    <h3 class="player-2-side"></h3>
+                    <div><img src="" alt=""></div>
+                </div>
+
+            </div>
+
+
+            
+
+            <div class="game-log">
+                <h3>Game Log</h3>
+            </div>
+
+            <div class="score-board">
+                <h3>Scoreboard</h3>
+                <div class="score-board-grid">
+                    <div></div>
+                    <p>Player 1</p>
+                    <p>Player 2</p>
+                    <p>Wins</p>
+                    <p class="player-1-wins">0</p>
+                    <p class="player-2-wins">0</p>
+                    <p>Draws</p>
+                    <p class="player-1-draws">0</p>
+                    <p class="player-2-draws">0</p>
+                </div>
+            </div>
+
+            <button class="rematch-btn">Re-match</button>
+            <p class="refresh-text">Click refresh on your browser for a total reset.</p>
+
+        </div>
+
+        <main class="main-section">
+
+            <div class="board">
+
+                <div class="box no-left no-top" data-square="A1"></div>
+                <div class="box no-top" data-square="A2"></div>
+                <div class="box no-top no-right" data-square="A3"></div>
+                <div class="box no-left" data-square="B1"></div>
+                <div class="box" data-square="B2"></div>
+                <div class="box no-right" data-square="B3"></div>
+                <div class="box no-left no-bottom" data-square="C1"></div>
+                <div class="box no-bottom" data-square="C2"></div>
+                <div class="box no-bottom no-right" data-square="C3"></div>
+    
+            </div>
+
+        </main>
+        
+
+    </div>
+
+    
+    
+
+    <script src="javascript/app.js"></script>
+</body>
+</html>

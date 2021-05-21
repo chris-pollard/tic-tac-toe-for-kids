@@ -1,0 +1,462 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&display=swap');
+
+/* CSS HEX */
+/* --eton-blue: #A2C6A6ff;
+--dartmouth-green: #2C7335ff;
+--chestnut: #905238ff;
+583222
+--tumbleweed: #E9AB7Fff; */
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #2C7335ff;
+}
+
+.fixed-background {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1000;
+    margin-bottom: -100px;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 2em;
+}
+
+button, input, legend {
+    font-size: 1.5em;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+
+
+.board {
+    margin: 0 5% 5% 0;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border-radius: 0.4em;
+    
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+.green {
+    background-image: url("../images/o_2.png");
+    background-size: cover;
+}
+
+.red {
+    background-image: url("../images/x_2.png");
+    background-size: cover;
+}
+
+.page-1-col-2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-1 {
+    
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+}
+
+.play-btn {
+    margin-bottom: 20%;
+}
+
+.page-1-col-3 {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.page-1-col-1 {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.col-1-row-1, .col-3-row-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-1-heading {
+    margin-top: 0;
+}
+
+.page-1-animal-img {
+    width: 70%;
+}
+
+.page-1-animal-img-2 {
+    width: 90%;
+}
+
+.page-3 {
+    
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    background-color: #A2C6A6ff;
+    
+}
+
+.main-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/jungle_border.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.side-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 1em 2em;
+    background-color: #F3E5DF;
+    border-right: 0.5em outset #905238;
+}
+
+.player-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-1-box, .player-2-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.player-1-side, .player-2-side {
+    font-size: 1em;
+}
+
+.page-2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.game-log {
+    height: 20em;
+    overflow: auto;
+}
+
+.game-log p {
+    font-size: 0.85em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.highlight {
+    background-color: rgb(10, 209, 10);
+}
+
+.draw-highlight {
+    background-color: rgb(245, 179, 58);
+}
+
+.score-board-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    max-width: 15em;
+
+}
+
+.score-board-grid p {
+    margin: 0;
+    font-size: 0.85em;
+
+}
+
+.page-2 img {
+    height: 10em;
+}
+
+.player-1-box img, .player-2-box img{
+    width: 10em;
+}
+
+.form-buttons {
+    text-align: center;
+    margin-top: 2em;
+}
+
+
+.player-1-section, .player-2-section, .review-container {
+    background-color: #F2F7F3;
+    padding: 1em 1em 1em 1em;
+    border-radius: 0.7em;
+    box-shadow: 5px 5px 10px #19411E
+}
+
+.review-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-title {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+button, .player-1-name, .player-2-name {
+    border-radius: 0.1em;
+}
+
+
+
+.score-board-grid p {
+    font-size: 0.85em;
+}
+
+.refresh-text {
+    font-size: 0.85em;
+}
+
+.rematch-btn {
+    margin-top: 2em;
+    max-width: 10em;
+
+}
+
+/* radio button styling */
+
+.radio-input-div {
+    display: inline;
+}
+
+
+
+.bounce-top {
+	-webkit-animation: bounce-top 3s steps(2, end) 1s infinite alternate both;
+	        animation: bounce-top 3s steps(2, end) 1s infinite alternate both;
+}
+
+.hidden {
+    display: none;
+}
+
+/* board game border */
+
+
+.box {
+    border: solid 4px #2C7335ff;
+}
+
+.no-left {
+    border-left: none;
+}
+
+.no-top {
+    border-top: none;
+}
+
+.no-right {
+    border-right: none;
+}
+
+.no-bottom {
+    border-bottom: none;
+}
+
+button {
+    padding: 0.25em 1.5em;
+    background-color: #905238;
+    color: #F2F7F3;
+    border: solid 4px #D3A48F;
+    border-radius: 15px;
+    box-shadow: 0 4px #999;
+    cursor: pointer;
+
+}
+
+  
+button:hover {background-color: #399746}
+  
+button:active {
+    background-color: #25622D;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-5-21 11:3:29
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation bounce-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes bounce-top {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  @keyframes bounce-top {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  
