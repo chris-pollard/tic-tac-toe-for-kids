@@ -1,15 +1,21 @@
-# Tic-Tac-Toe - kid's version
+# Tic Tac Toe for kids
 
 
 ## General Assembly Software Engineering Immersive 
 
   
 
-[Visit website](https://chris-pollard.github.io/tic-tac-toe/)
+[Visit website](https://chris-pollard.github.io/tic-tac-toe-for-kids/)
 
 First published 21 May 2021
 
-![alt text](screen-shot-webpage.png "prototype screenshot")
+<img src="images/screen_shot_1.png" width=250>
+
+<img src="images/screen_shot_2.png" width=250>
+
+<img src="images/screen_shot_3.png" width=250>
+
+<img src="images/screen_shot_4.png" width=250>
 
 
 ### Purpose
