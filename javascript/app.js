@@ -173,7 +173,7 @@ function handleBoardClick(event) {
             } else if (secondPlayerWins()) {
                 console.log('player 2 wins')
                 isGameActive = false;
-                createLog(`${player1.name} wins! Game finished.`);
+                createLog(`${player2.name} wins! Game finished.`);
                 player2.winCount += 1;
                 player2WinTicker.textContent = player2.winCount;
                 gamesPlayed += 1;

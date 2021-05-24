@@ -9,13 +9,13 @@
 
 First published 21 May 2021
 
-<img src="images/screen_shot_1.png" width=250>
+<img src="images/screen_shot_1.png" width=350>
 
-<img src="images/screen_shot_2.png" width=250>
+<img src="images/screen_shot_2.png" width=350>
 
-<img src="images/screen_shot_3.png" width=250>
+<img src="images/screen_shot_3.png" width=350>
 
-<img src="images/screen_shot_4.png" width=250>
+<img src="images/screen_shot_4.png" width=350>
 
 
 ### Purpose
@@ -33,6 +33,8 @@ The app must:
 - Deploy the game online
 - Use semantic markup for HTML and CSS (adhere to best practices)  
 
+### Known Issues
 
+- The app is not fully responsive. Optimised for desktop (min-height: 800px, min-width: 1200px).
 
 [Link to project requirements document](https://gist.github.com/epoch/70e4ca24dc3b7ca1de8def58bc85d194)
